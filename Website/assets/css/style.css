@@ -222,9 +222,7 @@ a,
 
 .side-image-text {
   background: #fff;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-  padding: 140px 60px 140px;
+  padding: 80px 60px 140px;
 }
 
 /* Dark background */
@@ -708,13 +706,13 @@ a,
 }
 
 .btn.btn-d {
-  background: #d9534f;
-  color: #fff;
+  background: #b4d46a;
+  color: #222;
 }
 
 .btn.btn-d:hover,
 .btn.btn-d:focus {
-  background: #c12e2a;
+  background: #c4f15c;
 }
 
 .btn.btn-b {
@@ -769,6 +767,15 @@ a,
 
 .btn-list .btn {
   margin: 5px 0;
+}
+
+.btn-danger{
+  background-color: #b4d46a!important;
+  color: #222!important;
+  border:none;
+}
+.btn-danger:hover{
+  background-color: #c4f15c!important;
 }
 
 .search-btn {
@@ -1239,7 +1246,7 @@ General Styles - Owlcarousel
 	Navbar
 --------------------------------------------------------------*/
 .navbar-custom {
-  background-color: rgba(10, 10, 10, 0.9);
+  background-color: rgb(14, 13, 14);
   border: 0;
   border-radius: 0;
   z-index: 1000;
@@ -1438,7 +1445,7 @@ General Styles - Owlcarousel
 
 /* Contact Page Header */
 .contact-page-header {
-  background-position: 13% 45%;
+  /*background-position: 13% 45%;*/
   background-repeat: no-repeat;
 }
 
@@ -1527,7 +1534,7 @@ Google map
 ------------------------------------------------------------- */
 #map-section {
   position: relative;
-  height: 450px;
+  height: 300px;
   width: 100%;
 }
 
@@ -2356,7 +2363,7 @@ Google map
 }
 
 .widget .widget-title {
-  border-bottom: 1px dotted #c2c2c2;
+  /*border-bottom: 1px dotted #c2c2c2;*/
   font-size: 14px;
   padding: 0 0 10px;
   margin: 0 0 15px;
@@ -2926,5 +2933,54 @@ Google map
 }
 
 .red-color{
-  color: #d9534f;
+  color: #B4D46A;
+}
+
+.center-content{
+  text-align: center;
+}
+.center-content ul li{
+  display: inline-block;
+}
+.fit-image img{
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 80px auto;
+}
+.fit-top img{
+  margin-top: 80px;
+}
+
+.left-fit{
+  text-align:left!important;
+}
+.left-fit .module-title{
+  text-align:left!important;
+}
+.left-fit .module-subtitle{
+  text-align: left;
+  margin-bottom: 40px!important;
+}
+
+.right-fit{
+  text-align:right!important;
+}
+.right-fit .module-title{
+  text-align:right!important;
+}
+.right-fit .module-subtitle{
+  text-align: right;
+  margin-bottom: 40px!important;
+}
+
+.navbar-brand>img{
+  height: 40px!important;
+}
+.navbar{
+  min-height: 70px!important;
+}
+.navbar-nav>li>a{
+  padding-top: 25px;
+  font-size: 12px;
 }
