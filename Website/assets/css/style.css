@@ -207,7 +207,7 @@ a,
 }
 
 .divider-d {
-  border-top: 1px solid #202020;
+  border-top: 1px solid #656637;
   margin: 0;
 }
 
@@ -246,9 +246,11 @@ a,
 }
 
 .bg-dark {
-  background: #111;
+  background: rgb(88, 90, 40);
 }
-
+.bg-naz {
+  background: #878a56;
+}
 .bg-dark-30:before {
   position: absolute;
   background: rgba(2, 2, 2, 0.4);
@@ -650,7 +652,7 @@ a,
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 11px;
-  padding: 8px 37px;
+  padding: 12px 37px;
 }
 
 .btn.active.focus,
@@ -770,12 +772,12 @@ a,
 }
 
 .btn-danger{
-  background-color: #b4d46a!important;
-  color: #222!important;
+  background-color: #111!important;
+  color: #fff!important;
   border:none;
 }
 .btn-danger:hover{
-  background-color: #c4f15c!important;
+  background-color: #333!important;
 }
 
 .search-btn {
@@ -1246,7 +1248,7 @@ General Styles - Owlcarousel
 	Navbar
 --------------------------------------------------------------*/
 .navbar-custom {
-  background-color: rgb(14, 13, 14);
+  background-color: rgb(101, 103, 55);
   border: 0;
   border-radius: 0;
   z-index: 1000;
@@ -2026,7 +2028,7 @@ Google map
 	Call to action
 --------------------------------------------------------------*/
 .callout-text {
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
 }
 
 .callout-title {
@@ -2983,4 +2985,16 @@ Google map
 .navbar-nav>li>a{
   padding-top: 25px;
   font-size: 12px;
+}
+
+#services .col-md-4, .col-md-3{
+  min-height: 150px;
+  border:1px solid #f1f1f1;
+  margin: 5px;
+}
+#services .col-md-4{
+  width: 32.3%;
+}
+#services .col-md-3{
+  width: 24%;
 }
