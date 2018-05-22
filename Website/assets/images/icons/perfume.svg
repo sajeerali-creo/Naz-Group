@@ -1,12 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-17307.002 -9518 504.119 512">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-10834.999 8510 504.118 512">
   <defs>
     <style>
       .cls-1 {
-        fill: #b4d46a;
+        fill: url(#linear-gradient);
       }
     </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#97cc53"/>
+      <stop offset="1" stop-color="#4c662a"/>
+    </linearGradient>
   </defs>
-  <g id="perfume" transform="translate(-17310.949 -9518)">
+  <g id="perfume" transform="translate(-10838.947 8510)">
     <g id="Group_14113" data-name="Group 14113">
       <g id="Group_14112" data-name="Group 14112">
         <path id="Path_7709" data-name="Path 7709" class="cls-1" d="M187.935,250.95a70.993,70.993,0,0,0-40.471,129.32,9.028,9.028,0,0,0,5.151,1.614h70.639a9.028,9.028,0,0,0,5.151-1.614,70.993,70.993,0,0,0-40.47-129.32ZM220.3,363.83H155.565a52.939,52.939,0,1,1,64.737,0Z"/>

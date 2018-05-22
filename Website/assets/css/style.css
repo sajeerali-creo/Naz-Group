@@ -246,7 +246,10 @@ a,
 }
 
 .bg-dark {
-  background: rgb(88, 90, 40);
+  background: rgb(52, 53, 28);
+}
+.bg-dark2 {
+  background: rgb(101, 102, 55);
 }
 .bg-naz {
   background: #878a56;
@@ -1520,6 +1523,7 @@ General Styles - Owlcarousel
 
 .footer .copyright {
   margin: 0;
+  color: #222;
 }
 
 .footer .footer-social-links {
@@ -2997,4 +3001,35 @@ Google map
 }
 #services .col-md-3{
   width: 24%;
+}
+
+.big-f{
+  font-weight: 400;
+  font-size: 30px;
+  color: #111;
+}
+.abt-ic{
+  height: 330px;
+  display: block;
+  margin: 0px auto;
+}
+.list-nz{
+  margin:0px;
+  padding: 20px;
+}
+.list-nz li{
+  padding-bottom: 10px;
+  font-size: 14px;
+  background-image: url(../assets/images/dot.svg);
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-size: 10px;
+}
+.s-naz .features-item{
+  min-height: 200px;
+  border:1px solid #f1f1f1;
+}
+.s-naz .features-icon span img {
+    height: 70px;
+    margin-top: 50px;
 }
