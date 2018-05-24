@@ -1,12 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-17797 -9518 480 448">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-11325 8510 480 448">
   <defs>
     <style>
       .cls-1 {
-        fill: #b4d46a;
+        fill: url(#linear-gradient);
       }
     </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#97cc53"/>
+      <stop offset="1" stop-color="#4c662a"/>
+    </linearGradient>
   </defs>
-  <g id="logistic" transform="translate(-17797 -9534)">
+  <g id="logistic" transform="translate(-11325 8494)">
     <g id="Group_14093" data-name="Group 14093">
       <g id="Group_14092" data-name="Group 14092">
         <path id="Path_7699" data-name="Path 7699" class="cls-1" d="M432,368H416V264a8,8,0,0,0-8-8H392V24a8,8,0,0,0-8-8H128a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8h40v41.136a31.9,31.9,0,0,0-23.576,26.68L107,177.752A8,8,0,0,0,104,184v32a8,8,0,0,0,16,0V187.84l27.344-21.872a31.784,31.784,0,0,0,57.312,0L232,187.84V216a8,8,0,0,0,16,0V184a8,8,0,0,0-3-6.248l-37.424-29.936A31.9,31.9,0,0,0,184,121.136V80H328V256H264a8,8,0,0,0-8,8V368H224V264a8,8,0,0,0-8-8H72a8,8,0,0,0-8,8V368H48a48,48,0,1,0,0,96H432a48,48,0,0,0,0-96ZM152,64H136V32h16Zm40,88a16,16,0,1,1-16-16A16,16,0,0,1,192,152Zm-8-88H168V32h16Zm16,0V32H376V64ZM376,80V256H344V80ZM320,272h32v32H320Zm-48,0h32v40a8,8,0,0,0,8,8h48a8,8,0,0,0,8-8V272h32v96H272Zm-144,0h32v32H128Zm-48,0h32v40a8,8,0,0,0,8,8h48a8,8,0,0,0,8-8V272h32v96H80ZM432,448H48a32,32,0,0,1,0-64H432a32,32,0,0,1,0,64Z"/>

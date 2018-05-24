@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-12337 8510 480 384.041">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#97cc53"/>
+      <stop offset="1" stop-color="#4c662a"/>
+    </linearGradient>
+  </defs>
+  <g id="automobile" transform="translate(-12337 8462.024)">
+    <g id="Group_1371" data-name="Group 1371">
+      <g id="Group_1370" data-name="Group 1370">
+        <path id="Path_8127" data-name="Path 8127" class="cls-1" d="M479.3,308.856,455.864,227.9a16,16,0,0,0-15.3-11.928H352a16.456,16.456,0,0,0-16,16.84v95.16H271.792a39.624,39.624,0,0,0,7.4-16H312a8,8,0,0,0,8-8v-56a8,8,0,0,0-6.263-7.808L244,224.672,197.648,178.32A8,8,0,0,0,192,175.976H56a8,8,0,0,0-5.655,2.343l-48,48A8,8,0,0,0,0,231.976v64a8,8,0,0,0,6.056,7.76l26.592,6.648a39.523,39.523,0,0,0,7.56,17.592H16a8,8,0,0,0-8,8v56a8,8,0,0,0,8,8H56.8a40,40,0,0,0,78.4,0h17.6a40,40,0,0,0,78.4,0H368.8a40,40,0,0,0,78.4,0H472a8,8,0,0,0,8-8v-78.2a17.8,17.8,0,0,0-.7-4.92ZM304,295.976H279.2a39.319,39.319,0,0,0-2.584-8H304Zm-64-55.808,64,14.208v17.6H264v.208a39.584,39.584,0,0,0-24-8.208Zm24,63.808a24,24,0,1,1-24-24A24,24,0,0,1,264,303.976Zm-136-112h60.688l32,32H128Zm0,48h96v27.392a40.112,40.112,0,0,0-23.2,28.608H128Zm80.208,88H103.792a39.625,39.625,0,0,0,7.4-16H200.8a39.64,39.64,0,0,0,7.408,16Zm-148.9-136H112v32H27.312ZM33.4,294.08h-.008L16,289.728V239.976h96v56h-.8a39.9,39.9,0,0,0-77.8-1.9Zm62.6,9.9a24,24,0,1,1-24-24,24,24,0,0,1,24,24Zm0,112a24,24,0,1,1,24-24,24,24,0,0,1-24,24Zm96,0a24,24,0,1,1,24-24,24,24,0,0,1-24,24Zm144-32H231.2a40,40,0,0,0-78.4,0H135.2a40,40,0,0,0-78.4,0H24v-40H336ZM449.536,263.664l9.328,32.312H384v-32h64a7.6,7.6,0,0,0,1.536-.312ZM408,415.976a24,24,0,1,1,24-24A24,24,0,0,1,408,415.976Zm56-72H448v-8h16Zm0-24H440a8,8,0,0,0-8,8v24a8,8,0,0,0,8,8h24v24H447.2a40,40,0,0,0-78.4,0H352V232.816c0-.512.2-.8.056-.84l88.44.376,4.512,15.624H376a8,8,0,0,0-8,8v48a8,8,0,0,0,8,8h87.48l.52,1.8Z"/>
+      </g>
+    </g>
+    <g id="Group_1373" data-name="Group 1373">
+      <g id="Group_1372" data-name="Group 1372">
+        <rect id="Rectangle_3012" data-name="Rectangle 3012" class="cls-1" width="64" height="16" transform="translate(40 127.976)"/>
+      </g>
+    </g>
+    <g id="Group_1375" data-name="Group 1375">
+      <g id="Group_1374" data-name="Group 1374">
+        <rect id="Rectangle_3013" data-name="Rectangle 3013" class="cls-1" width="64" height="16" transform="translate(304 167.976)"/>
+      </g>
+    </g>
+    <g id="Group_1377" data-name="Group 1377">
+      <g id="Group_1376" data-name="Group 1376">
+        <rect id="Rectangle_3014" data-name="Rectangle 3014" class="cls-1" width="16" height="16" transform="translate(272 167.976)"/>
+      </g>
+    </g>
+    <g id="Group_1379" data-name="Group 1379">
+      <g id="Group_1378" data-name="Group 1378">
+        <rect id="Rectangle_3015" data-name="Rectangle 3015" class="cls-1" width="16" height="16" transform="translate(8 127.976)"/>
+      </g>
+    </g>
+    <g id="Group_1381" data-name="Group 1381">
+      <g id="Group_1380" data-name="Group 1380">
+        <rect id="Rectangle_3016" data-name="Rectangle 3016" class="cls-1" width="16" height="16" transform="translate(176 47.976)"/>
+      </g>
+    </g>
+    <g id="Group_1383" data-name="Group 1383">
+      <g id="Group_1382" data-name="Group 1382">
+        <rect id="Rectangle_3017" data-name="Rectangle 3017" class="cls-1" width="64" height="16" transform="translate(208 47.976)"/>
+      </g>
+    </g>
+    <g id="Group_1385" data-name="Group 1385">
+      <g id="Group_1384" data-name="Group 1384">
+        <rect id="Rectangle_3018" data-name="Rectangle 3018" class="cls-1" width="8" height="16" transform="translate(144 247.976)"/>
+      </g>
+    </g>
+  </g>
+</svg>

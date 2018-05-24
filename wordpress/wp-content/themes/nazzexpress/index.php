@@ -6,28 +6,41 @@
 <section class="home-section home-parallax home-fade" id="home">
 	<div class="hero-slider">
 		<ul class="slides">
-			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-8.jpg);">
+
+			<?php
+				query_posts('category_name=HomeSlider' );
+				while ( have_posts() ) : the_post();
+				$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+			?>
+
+			<li class="bg-dark-30 bg-dark" style="background:url('<?php echo $feat_image; ?>'); background-size:cover;">
 				<div class="titan-caption">
 					<div class="caption-content">
-						<div class="font-alt mb-30 titan-title-size-1">Hello &amp; welcome</div>
-						<div class="font-alt mb-40 titan-title-size-4">We are Naz</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+						<div class="font-alt mb-30 titan-title-size-1"><?php echo get_post_meta($post->ID,'subtitle',true);?>e</div>
+						<div class="font-alt mb-40 titan-title-size-4"><?php echo get_the_title(); ?></div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+					</div>
+				</div>
+			</li>
+
+			<?php
+				endwhile;
+			?>
+
+
+	<!--
+			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-12.jpg);">
+				<div class="titan-caption">
+					<div class="caption-content">
+						<div class="font-alt mb-30 titan-title-size-2">NAZ best</div>
+						<div class="font-alt mb-40 titan-title-size-3">Airfreight</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
 					</div>
 				</div>
 			</li>
 			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-9.jpg);">
 				<div class="titan-caption">
 					<div class="caption-content">
-						<div class="font-alt mb-30 titan-title-size-2">NAZ best</div>
-						<div class="font-alt mb-40 titan-title-size-3">Perfumes Trading</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
-
-					</div>
-				</div>
-			</li>
-			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-10.jpg);">
-				<div class="titan-caption">
-					<div class="caption-content">
 						<div class="font-alt mb-30 titan-title-size-2">NAZ Express</div>
-						<div class="font-alt mb-40 titan-title-size-3">General Transport</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+						<div class="font-alt mb-40 titan-title-size-3">Sea freight</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
 					</div>
 				</div>
 			</li>
@@ -35,24 +48,51 @@
 				<div class="titan-caption">
 					<div class="caption-content">
 						<div class="font-alt mb-30 titan-title-size-1">NAZ Express</div>
-						<div class="font-alt mb-40 titan-title-size-3">Logistic Establishment</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+						<div class="font-alt mb-40 titan-title-size-3">Customs clearing</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
 					</div>
 				</div>
 			</li>
-			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-12.jpg);">
+			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-10.jpg);">
 				<div class="titan-caption">
 					<div class="caption-content">
 						<div class="font-alt mb-30 titan-title-size-1">NAZ Express</div>
-						<div class="font-alt mb-40 titan-title-size-3">Freight brokering</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+						<div class="font-alt mb-40 titan-title-size-3">Land Transportation</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
 					</div>
 				</div>
 			</li>
+
+			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-14.jpg);">
+				<div class="titan-caption">
+					<div class="caption-content">
+						<div class="font-alt mb-30 titan-title-size-1">NAZ Express</div>
+						<div class="font-alt mb-40 titan-title-size-3">Warehousing</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+					</div>
+				</div>
+			</li>
+
+			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-15.jpg);">
+				<div class="titan-caption">
+					<div class="caption-content">
+						<div class="font-alt mb-30 titan-title-size-1">NAZ Express</div>
+						<div class="font-alt mb-40 titan-title-size-3">Fleet management</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+					</div>
+				</div>
+			</li>
+
+			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-13.jpg);">
+				<div class="titan-caption">
+					<div class="caption-content">
+						<div class="font-alt mb-30 titan-title-size-1">NAZ Express</div>
+						<div class="font-alt mb-40 titan-title-size-3">Automobile logistics</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
+					</div>
+				</div>
+			</li> -->
 		</ul>
 	</div>
 </section>
 
 <div class="main">
-	<section class="module-extra-small bg-dark">
+	<section class="module-extra-small bg-naz">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
@@ -62,7 +102,7 @@
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4 col-lg-2">
-					<div class="callout-btn-box"><a class="btn btn-danger btn-round" href="#">get a quote</a></div>
+					<div class="callout-btn-box"><a class="btn btn-danger btn-round" href="#">Contact Us</a></div>
 				</div>
 			</div>
 		</div>
@@ -72,8 +112,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2">
-					<h2 class="module-title font-alt">Welcome to Naz Group</h2>
-					<div class="module-subtitle font-serif large-text">We endeavor to be one of the most reliable Group in the industry with strong emphasis on efficiency in operations and satisfaction for customers. </div>
+					<h2 class="module-title font-alt">Welcome to Nazz Express</h2>
+					<div class="module-subtitle font-serif large-text">
+						We at Nazz Express company provide end-to-end Shipping & Logistics solutions to the Middle East region, covering wide scope of logistical needs and wants.</div>
 				</div>
 			</div>
 			<div class="row">
@@ -96,32 +137,46 @@
 				</div>
 			</div>
 			<div class="row multi-columns-row">
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="features-item">
-						<div class="features-icon"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/perfume.svg"></span></div>
-						<h3 class="features-title font-alt">Perfumes Trading</h3>
-						<p>NAZ best Perfumes strive to provide an exciting range of best quality fragrances with all the subtle magic of many of the world's most exclusive perfumes.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="features-item">
-						<div class="features-icon"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/truck.svg"></span></div>
-						<h3 class="features-title font-alt">General Transport</h3>
-						<p>NAZ General Transport proudly provides service across GCC through Integrated services and the responsibility towards our clients.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="features-item">
-						<div class="features-icon"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/logistic.svg"></span></div>
-						<h3 class="features-title font-alt">Logistic Establishment</h3>
-						<p>Established in 2017, Nazz Express has a highly experienced and professional team which offers a full range of logistic,transportation services</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12">
+				<div class="col-md-4 col-sm-6 col-xs-12 hvr-shutter-out-vertical">
 					<div class="features-item">
 						<div class="features-icon"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/fright.svg"></span></div>
-						<h3 class="features-title font-alt">Freight brokering</h3>
-						<p>Freight brokering is very much a relationship-driven field as we know that our integrity is beyond question.</p>
+						<h3 class="features-title font-alt">Airfreight</h3>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 hvr-shutter-out-vertical">
+					<div class="features-item">
+						<div class="features-icon"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/ship.svg"></span></div>
+						<h3 class="features-title font-alt">Sea freight</h3>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12 hvr-shutter-out-vertical">
+					<div class="features-item">
+						<div class="features-icon"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/logistic.svg"></span></div>
+						<h3 class="features-title font-alt">Customs clearing</h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 hvr-shutter-out-vertical">
+					<div class="features-item">
+						<div class="features-icon"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/truck.svg"></span></div>
+						<h3 class="features-title font-alt">Land Transportation</h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 hvr-shutter-out-vertical">
+					<div class="features-item">
+						<div class="features-icon"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/warehouse.svg"></span></div>
+						<h3 class="features-title font-alt">Warehousing</h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 hvr-shutter-out-vertical">
+					<div class="features-item">
+						<div class="features-icon"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/route.svg"></span></div>
+						<h3 class="features-title font-alt">Fleet management</h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 hvr-shutter-out-vertical">
+					<div class="features-item">
+						<div class="features-icon"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/automobile.svg"></span></div>
+						<h3 class="features-title font-alt">Automobile logistics </h3>
 					</div>
 				</div>
 			</div>
@@ -143,7 +198,7 @@
 					<div class="count-item mb-sm-40">
 						<div class="count-icon"><span class="icon-global"></span></div>
 						<h3 class="count-to font-alt" data-countto="2"></h3>
-						<h5 class="count-title font-serif">Naz Group in Globel</h5>
+						<h5 class="count-title font-serif">Naz Express in Globel</h5>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-4 col-lg-4">
@@ -167,7 +222,7 @@
 							<div class="col-md-12 col-sm-12 col-xs-12">
 								<div class="alt-features-item">
 									<div class="alt-features-icon"><span class="icon-strategy red-color"></span></div>
-									<h3 class="alt-features-title font-alt">Naz History</h3>Since the inception, NAZ Group has successfully managed, sustained and enhanced its expertise and services. To embark on our journey of success we needed the tools of foresight, strategy and preparedness and these led us to the path of growth and our vision.
+									<h3 class="alt-features-title font-alt">Naz History</h3>Since the inception, Naz Express has successfully managed, sustained and enhanced its expertise and services. To embark on our journey of success we needed the tools of foresight, strategy and preparedness and these led us to the path of growth and our vision.
 								</div>
 								<div class="alt-features-item">
 									<div class="alt-features-icon"><span class="icon-lightbulb red-color"></span></div>
@@ -201,56 +256,26 @@ that with sound financial governance and a clear business strategy that pertains
 			</div>
 			<div class="row client">
 				<div class="owl-carousel text-center" data-items="5" data-pagination="true" data-navigation="false">
+
+					<?php
+						query_posts('category_name=OurClients' );
+						while ( have_posts() ) : the_post();
+					?>
 					<div class="owl-item">
 						<div class="col-sm-12">
-							<div class="client-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sample.png" alt="Client Logo"/></div>
+							<div class="client-logo"><?php the_post_thumbnail('full',array("class"=>"img_fit")); ?></div>
 						</div>
 					</div>
-					<div class="owl-item">
-						<div class="col-sm-12">
-							<div class="client-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sample.png" alt="Client Logo"/></div>
-						</div>
-					</div>
-					<div class="owl-item">
-						<div class="col-sm-12">
-							<div class="client-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sample.png" alt="Client Logo"/></div>
-						</div>
-					</div>
-					<div class="owl-item">
-						<div class="col-sm-12">
-							<div class="client-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sample.png" alt="Client Logo"/></div>
-						</div>
-					</div>
-					<div class="owl-item">
-						<div class="col-sm-12">
-							<div class="client-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sample.png" alt="Client Logo"/></div>
-						</div>
-					</div>
-					<div class="owl-item">
-						<div class="col-sm-12">
-							<div class="client-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sample.png" alt="Client Logo"/></div>
-						</div>
-					</div>
-					<div class="owl-item">
-						<div class="col-sm-12">
-							<div class="client-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sample.png" alt="Client Logo"/></div>
-						</div>
-					</div>
-					<div class="owl-item">
-						<div class="col-sm-12">
-							<div class="client-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sample.png" alt="Client Logo"/></div>
-						</div>
-					</div>
-					<div class="owl-item">
-						<div class="col-sm-12">
-							<div class="client-logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/sample.png" alt="Client Logo"/></div>
-						</div>
-					</div>
+
+					<?php
+						endwhile;
+					?>
+
+
 				</div>
 			</div>
 		</div>
 	</section>
-
 
 
 <?php get_footer(); ?>
