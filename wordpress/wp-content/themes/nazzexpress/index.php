@@ -13,10 +13,10 @@
 				$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			?>
 
-			<li class="bg-dark-30 bg-dark" style="background:url('<?php echo $feat_image; ?>'); background-size:cover;">
+			<li class="bg-dark-30 bg-dark" style="background:url('<?php echo $feat_image; ?>'); background-size: cover;background-position: center center;">
 				<div class="titan-caption">
 					<div class="caption-content">
-						<div class="font-alt mb-30 titan-title-size-1"><?php echo get_post_meta($post->ID,'subtitle',true);?>e</div>
+						<div class="font-alt mb-30 titan-title-size-1"><?php echo get_post_meta($post->ID,'subtitle',true);?></div>
 						<div class="font-alt mb-40 titan-title-size-4"><?php echo get_the_title(); ?></div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
 					</div>
 				</div>
@@ -26,67 +26,6 @@
 				endwhile;
 			?>
 
-
-	<!--
-			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-12.jpg);">
-				<div class="titan-caption">
-					<div class="caption-content">
-						<div class="font-alt mb-30 titan-title-size-2">NAZ best</div>
-						<div class="font-alt mb-40 titan-title-size-3">Airfreight</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
-					</div>
-				</div>
-			</li>
-			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-9.jpg);">
-				<div class="titan-caption">
-					<div class="caption-content">
-						<div class="font-alt mb-30 titan-title-size-2">NAZ Express</div>
-						<div class="font-alt mb-40 titan-title-size-3">Sea freight</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
-					</div>
-				</div>
-			</li>
-			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-11.jpg);">
-				<div class="titan-caption">
-					<div class="caption-content">
-						<div class="font-alt mb-30 titan-title-size-1">NAZ Express</div>
-						<div class="font-alt mb-40 titan-title-size-3">Customs clearing</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
-					</div>
-				</div>
-			</li>
-			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-10.jpg);">
-				<div class="titan-caption">
-					<div class="caption-content">
-						<div class="font-alt mb-30 titan-title-size-1">NAZ Express</div>
-						<div class="font-alt mb-40 titan-title-size-3">Land Transportation</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
-					</div>
-				</div>
-			</li>
-
-			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-14.jpg);">
-				<div class="titan-caption">
-					<div class="caption-content">
-						<div class="font-alt mb-30 titan-title-size-1">NAZ Express</div>
-						<div class="font-alt mb-40 titan-title-size-3">Warehousing</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
-					</div>
-				</div>
-			</li>
-
-			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-15.jpg);">
-				<div class="titan-caption">
-					<div class="caption-content">
-						<div class="font-alt mb-30 titan-title-size-1">NAZ Express</div>
-						<div class="font-alt mb-40 titan-title-size-3">Fleet management</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
-					</div>
-				</div>
-			</li>
-
-			<li class="bg-dark-30 bg-dark" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/section-13.jpg);">
-				<div class="titan-caption">
-					<div class="caption-content">
-						<div class="font-alt mb-30 titan-title-size-1">NAZ Express</div>
-						<div class="font-alt mb-40 titan-title-size-3">Automobile logistics</div><a class="section-scroll btn btn-border-w btn-round" href="#about">Learn More</a>
-					</div>
-				</div>
-			</li> -->
 		</ul>
 	</div>
 </section>
@@ -114,7 +53,18 @@
 				<div class="col-sm-8 col-sm-offset-2">
 					<h2 class="module-title font-alt">Welcome to Nazz Express</h2>
 					<div class="module-subtitle font-serif large-text">
-						We at Nazz Express company provide end-to-end Shipping & Logistics solutions to the Middle East region, covering wide scope of logistical needs and wants.</div>
+						<?php
+							query_posts('category_name=WelcomeToNazzExpress' );
+							while ( have_posts() ) : the_post();
+							$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+						?>
+						<?php the_content(); ?>
+						<?php
+							break;
+							endwhile;
+						?>
+						</div>
+
 				</div>
 			</div>
 			<div class="row">
@@ -222,19 +172,45 @@
 							<div class="col-md-12 col-sm-12 col-xs-12">
 								<div class="alt-features-item">
 									<div class="alt-features-icon"><span class="icon-strategy red-color"></span></div>
-									<h3 class="alt-features-title font-alt">Naz History</h3>Since the inception, Naz Express has successfully managed, sustained and enhanced its expertise and services. To embark on our journey of success we needed the tools of foresight, strategy and preparedness and these led us to the path of growth and our vision.
+									<h3 class="alt-features-title font-alt">Nazz History</h3>
+									<?php
+										query_posts('category_name=NazzHistory' );
+										while ( have_posts() ) : the_post();
+										$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+									?>
+									<?php the_content(); ?>
+									<?php
+										break;
+										endwhile;
+									?>
 								</div>
 								<div class="alt-features-item">
 									<div class="alt-features-icon"><span class="icon-lightbulb red-color"></span></div>
-									<h3 class="alt-features-title font-alt">Our Success</h3>It gives me immense pride and satisfaction to share with you the phenomenal growth that NAZ
-Group as an organization has witnessed. Our success is attributed to our ability to stay ahead of competition by consistently investing in our staff to develop their skills with latest technology and
-operations.
+									<h3 class="alt-features-title font-alt">Our Success</h3>
+									<?php
+										query_posts('category_name=NazzSuccess' );
+										while ( have_posts() ) : the_post();
+										$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+									?>
+									<?php the_content(); ?>
+									<?php
+										break;
+										endwhile;
+									?>
 								</div>
 								<div class="alt-features-item">
 									<div class="alt-features-icon"><span class="icon-target red-color"></span></div>
-									<h3 class="alt-features-title font-alt">Our Advantage</h3>We endeavor to be one of the most reliable Group in
-the industry with strong emphasis on efficiency in operations and satisfaction for customers. We believe
-that with sound financial governance and a clear business strategy that pertains innovation, our group has recorded a period of strong, profitable and sustainable growth.
+									<h3 class="alt-features-title font-alt">Our Advantage</h3>
+									<?php
+										query_posts('category_name=NazzAdvantage' );
+										while ( have_posts() ) : the_post();
+										$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+									?>
+									<?php the_content(); ?>
+									<?php
+										break;
+										endwhile;
+									?>
 								</div>
 
 							</div>

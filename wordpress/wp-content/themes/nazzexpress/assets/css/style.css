@@ -1094,9 +1094,9 @@ Hero Slider
 }
 
 .hero-slider .slides li {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-size: cover!important;
+  background-position: center center!important;
+  background-repeat: no-repeat!important;
   height: 100% !important;
   width: 100%;
   padding: 0;
@@ -3069,11 +3069,11 @@ Google map
     height: 70px;
     margin-top: 50px;
 }
-.pt-p{
+.pt-p p{
   text-align: center;
   display: block;
   font-size: 14px;
-  width: 85%;
+  width: 95%;
   display: block;
   margin: 0px auto;
   line-height: 26px;
@@ -3104,4 +3104,72 @@ Google map
 
 .btn.btn-border-w:hover, .btn.btn-border-w:focus{
   background-color: #222;
+}
+
+.img_fit-abt{
+  height: 380px;
+  width: auto;
+  float: right;
+}
+
+
+.wpcf7-form-control-wrap input{
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    height: 33px;
+    border: 1px solid #EAEAEA;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out 0s;
+    width: 100%;
+    padding: 0px 10px;
+}
+.wpcf7 label{
+  width: 100%;
+}
+
+.wpcf7-form-control-wrap textarea{
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    height: 120px;
+    border: 1px solid #EAEAEA;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out 0s;
+    width: 100%;
+    padding: 10px;
+}
+
+.wpcf7-submit{
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  padding: 12px 37px;
+  background-color: #333!important;
+  color: #fff;
+  border:none;
+  width: 100%;
+}
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
+  background-color: #E53A40!important;
+  color: #fff!important;
+  border: none!important;
+  padding: 10px 0px!important;
+}
+
+div.wpcf7-response-output{
+  padding: 20px!important;
+  margin:0px!important;
+}
+div.wpcf7-response-output{
+  background: #f1f1f1;
+  border:none!important;
+  color: #333;
+}
+.wpcf7-validation-errors{
+    background-color: #E53A40!important;
+    color: #fff!important;
 }

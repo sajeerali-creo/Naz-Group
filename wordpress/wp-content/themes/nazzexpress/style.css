@@ -18,6 +18,9 @@
 /*--------------------------------------------------------------
 	Common
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+	Common
+--------------------------------------------------------------*/
 html {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -1111,9 +1114,9 @@ Hero Slider
 }
 
 .hero-slider .slides li {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-size: cover!important;
+  background-position: center center!important;
+  background-repeat: no-repeat!important;
   height: 100% !important;
   width: 100%;
   padding: 0;
@@ -3086,11 +3089,11 @@ Google map
     height: 70px;
     margin-top: 50px;
 }
-.pt-p{
+.pt-p p{
   text-align: center;
   display: block;
   font-size: 14px;
-  width: 85%;
+  width: 95%;
   display: block;
   margin: 0px auto;
   line-height: 26px;
@@ -3121,4 +3124,10 @@ Google map
 
 .btn.btn-border-w:hover, .btn.btn-border-w:focus{
   background-color: #222;
+}
+
+.img_fit-abt{
+  height: 380px;
+  width: auto;
+  float: right;
 }

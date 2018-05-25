@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col-sm-6">
           <h4 class="font-alt">Get in touch</h4><br/>
-          <form id="contactForm" role="form" method="post" action="php/contact.php">
+          <!-- <form id="contactForm" role="form" method="post" action="php/contact.php">
             <div class="form-group">
               <label class="sr-only" for="name">Name</label>
               <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
@@ -37,8 +37,10 @@
             <div class="text-center">
               <button class="btn btn-block btn-round btn-danger btn-d" id="cfsubmit" type="submit">Submit</button>
             </div>
-          </form>
-          <div class="ajax-response font-alt" id="contactFormResponse"></div>
+          </form> -->
+          <!-- <div class="ajax-response font-alt" id="contactFormResponse"></div> -->
+          <?php $cfsignupname='[contact-form-7 id="78" title="Arnett Creek - Lower Picketpost Mesa (UI) - 60 Nov 2016"]'?>
+          <?php echo do_shortcode($cfsignupname);?>
         </div>
         <div class="col-sm-6">
           <h4 class="font-alt">Address & Contact Detals</h4><br/>
